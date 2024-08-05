@@ -5,16 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example.learn.redis</groupId>
-        <artifactId>redis-learn-parent</artifactId>
+        <artifactId>ch01-client-jedis</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>ch01-client-jedis</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>ch010-jedis-hello</module>
-        <module>ch011-jedis-standalone</module>
-    </modules>
+    <artifactId>ch010-jedis-hello</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -22,4 +17,24 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!--jedis-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+
+        <!--junit-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--logging-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+    </dependencies>
 </project>
