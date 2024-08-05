@@ -1,4 +1,4 @@
-package org.example.learn.redis.standalone.jedis.api;
+package org.example.learn.redis.jedis.standlone.api;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -8,18 +8,15 @@ import redis.clients.jedis.Jedis;
 
 import java.time.Instant;
 
-public class KeyApiDemo {
+public class KeyApiTest {
 
-    private static final Logger LOG = LoggerFactory.getLogger(KeyApiDemo.class);
+    private static final Logger LOG = LoggerFactory.getLogger(KeyApiTest.class);
 
     private static final String HOST = "192.168.42.103";
     private static final int PORT = 6379;
     private static final String KEY = "test:key";
     private static final String VALUE = "changjiang";
     private Jedis jedis;
-
-
-
 
     @Before
     public void setupJedis() {

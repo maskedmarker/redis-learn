@@ -1,6 +1,7 @@
-package org.example.learn.redis.standalone.jedis.pipeline;
+package org.example.learn.redis.jedis.standlone.pipeline;
 
-import org.example.learn.redis.standalone.jedis.config.RedisConfig;
+
+import org.example.learn.redis.jedis.standlone.config.RedisConfig;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.Response;
@@ -10,9 +11,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
-public class PipelineDemo {
+public class PipelineTest {
     private static final Jedis jedis;
 
     static {

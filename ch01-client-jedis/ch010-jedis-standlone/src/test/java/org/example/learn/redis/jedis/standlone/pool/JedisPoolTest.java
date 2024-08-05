@@ -1,11 +1,11 @@
-package org.example.learn.redis.standalone.jedis.pool;
+package org.example.learn.redis.jedis.standlone.pool;
 
-import org.example.learn.redis.standalone.jedis.config.RedisConfig;
+import org.example.learn.redis.jedis.standlone.config.RedisConfig;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-public class JedisPoolDemo {
+public class JedisPoolTest {
 
     public static void main(String[] args) {
         JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();

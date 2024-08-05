@@ -1,4 +1,4 @@
-package org.example.learn.redis.standalone.jedis.api;
+package org.example.learn.redis.jedis.standlone.api;
 
 import org.junit.After;
 import org.junit.Before;
@@ -9,9 +9,9 @@ import redis.clients.jedis.Jedis;
 
 import java.util.Set;
 
-public class SetApiDemo {
+public class SetApiTest {
 
-    private static final Logger LOG = LoggerFactory.getLogger(SetApiDemo.class);
+    private static final Logger LOG = LoggerFactory.getLogger(SetApiTest.class);
 
     private static final String HOST = "192.168.56.101";
     private static final int PORT = 6379;
