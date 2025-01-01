@@ -4,9 +4,9 @@
 ```text
 Jedis provides a simple API for connecting to and interacting with Redis, including commands for common Redis operations 
 like adding, retrieving, and deleting data, as well as advanced Redis features such as transactions, pipelining, and pub/sub.
+```
 
-
-Key Features of Jedis:
+### Key Features of Jedis:
 
 Simple and Lightweight:
 Jedis is designed to be simple and straightforward to use. It provides an easy-to-understand, Java-friendly API to interact with Redis.
@@ -27,20 +27,8 @@ Cluster Support:
 Jedis also provides support for Redis clusters, allowing it to work with Redis instances distributed across multiple nodes, which is useful for large-scale applications.
 
 
-Jedis vs. Lettuce:
-While Jedis is a popular Java client for Redis, Lettuce is another alternative. Here are some differences:
+### Jedis vs. Lettuce
+While Jedis is a popular Java client for Redis, Lettuce is another alternative. 
+Here are some differences:
 - Jedis uses a synchronous blocking I/O model, which means that each Redis command blocks until it gets a response.
 - Lettuce, on the other hand, supports both synchronous and asynchronous APIs and is often preferred for highly scalable applications since it can handle non-blocking I/O operations.
-```
-
-## lettuce
-
-```text
-Lettuce is a modern, high-performance, and scalable Java Redis client that supports both synchronous and asynchronous communication with Redis. 
-It is an alternative to the widely used Jedis library, offering advantages like non-blocking I/O operations, scalability, and support for Redis' advanced features.
-
-Lettuce is particularly well-suited for applications requiring high throughput and responsiveness, especially in environments where asynchronous or reactive programming models are favored.
-
-
-```
-
